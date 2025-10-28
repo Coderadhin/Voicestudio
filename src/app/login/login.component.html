@@ -1,0 +1,23 @@
+<div class="login-page">
+  <div class="logo-wrap">
+    <img src="assets/logo.png" alt="SVS Icon" class="svs-icon" />
+  </div>
+
+  <div class="login-card" role="form" aria-labelledby="welcome">
+    <h2 id="welcome" class="brand-title">Story Voice Studio</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input id="email" type="email" placeholder="Email" formControlName="email" [class.invalid]="submitted && f.email.invalid"/>
+
+      <input id="password" type="password" placeholder="Password" formControlName="password" [class.invalid]="submitted && f.password.invalid"/>
+
+      <div class="forgot-row">
+        <a (click)="forgotPassword()" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn-login">Login</button>
+
+      <p class="signup small">Don't have an account? <a routerLink="">Create account</a></p>
+    </form>
+  </div>
+</div>
