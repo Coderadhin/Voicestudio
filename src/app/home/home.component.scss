@@ -1,0 +1,31 @@
+.home-bg{
+  min-height: 100vh;
+  background-image: url('../assets/home-bg.png');
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.home-overlay{
+  background: rgba(255,255,255,0.74);
+  width: 100%;
+  max-width: 900px;
+  margin: 40px;
+  border-radius: 18px;
+  padding: 36px;
+  text-align:center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+.home-content{ display:flex; flex-direction:column; align-items:center; gap:12px; }
+.home-logo{ width:96px; height:96px; border-radius:999px; }
+.btn-play{
+  padding: 12px 20px;
+  background: linear-gradient(90deg, var(--lavender-300), var(--accent));
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight:600;
+  cursor:pointer;
+  margin-top:8px;
+}
