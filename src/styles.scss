@@ -1,0 +1,23 @@
+:root {
+  --lavender-100: #EDE7F6;
+  --lavender-200: #D9CFF0;
+  --lavender-300: #B39DDB;
+  --accent: #9575CD;
+  --muted-border: #C6B7E9;
+  --cream: #F8F6FB;
+  --card-bg: rgba(255,255,255,0.92);
+  --text: #3b2f2b;
+}
+
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color: var(--text); background: linear-gradient(135deg, var(--lavender-100), var(--cream)); }
+
+.app-root-wrapper {
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 1.5rem;
+}
+
+.small { font-size: 0.85rem; color: rgba(59,47,43,0.7); }
